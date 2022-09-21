@@ -21,12 +21,5 @@ RUN pip install --upgrade setuptools
 
 RUN python -m pip install jupyterlab
 
-
+# requirements.txtで管理する
 RUN pip install -r requirements.txt
-
-# RUN pip install 'numpy>=1.17.4'
-# RUN pip install scipy
-# RUN pip install 'scikit-learn >= 0.22.0'
-# RUN pip install 'matplotlib >= 3.1.0'
-# # 
-# RUN pip install 'pandas>=0.25.3'
