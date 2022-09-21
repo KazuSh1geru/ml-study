@@ -1,6 +1,10 @@
 ## 参照
 https://qiita.com/jhorikawa_err/items/fb9c03c0982c29c5b6d5
 
+requirements.txt
+https://zuma-lab.com/posts/docker-python-settings
+
+
 コンテナへの接続
 ```
 $ docker compose exec python3 bash
