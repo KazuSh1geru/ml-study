@@ -5,6 +5,10 @@ requirements.txt
 https://zuma-lab.com/posts/docker-python-settings
 
 
+コンテナへの作成・起動
+```
+$ docker compose up -d --build
+```
 コンテナへの接続
 ```
 $ docker compose exec python3 bash
@@ -24,6 +28,6 @@ $ docker image rm imageid
 ```
 jupiter notebookの起動
 ```
-$ docker run -v $PWD/opt:/root/opt -w /root/opt -it --rm -p 7777:8888 ml_python-python3 jupyter-lab --ip 0.0.0.0 --allow-root -b localhost
+$ docker run -v $PWD/src:/root/src -w /root/src -it --rm -p 7777:8888 ml_python-python3 jupyter-lab --ip 0.0.0.0 --allow-root -b localhost
 ```
 
